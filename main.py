@@ -121,7 +121,7 @@ def main():
                 )
 
                 reduce_chain = load_summarize_chain(
-                    llm=llm4,
+                    llm=llm3,
                     chain_type="stuff",
                     prompt=combine_prompt_template,
                 )
@@ -134,6 +134,8 @@ def main():
 
     output = open_file("Output/Summary")
     st.write(output)
+    f = open('Output/Summary.txt', 'r+')
+    f.truncate(0)
 
 
 if __name__ == "__main__":
