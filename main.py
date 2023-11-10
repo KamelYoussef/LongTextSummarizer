@@ -121,7 +121,7 @@ def main():
                 )
 
                 reduce_chain = load_summarize_chain(
-                    llm=llm3,
+                    llm=llm4,
                     chain_type="stuff",
                     prompt=combine_prompt_template,
                 )
